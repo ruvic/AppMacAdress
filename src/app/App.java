@@ -17,8 +17,12 @@ import java.net.UnknownHostException;
 public class App{
 	
    public static void main(String[] args){
-		
-	InetAddress ip;
+	getMACAdress();
+   }
+   
+   
+   public static void getMACAdress(){
+       InetAddress ip;
 	try {
 			
 		ip = InetAddress.getLocalHost();
@@ -45,7 +49,6 @@ public class App{
 		e.printStackTrace();
 			
 	}
-	    
    }
 
 }
